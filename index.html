@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Демонстрационный лендинг строительной компании NordHaus в премиальном стиле."
+    />
+    <title>NordHaus | Строительство, ремонт, демонтаж</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="NordHaus">
+        <span class="brand-mark"></span>
+        NordHaus
+      </a>
+      <nav class="top-nav" aria-label="Главная навигация">
+        <a href="#services">Услуги</a>
+        <a href="#process">Процесс</a>
+        <a href="#projects">Проекты</a>
+        <a href="#contact">Контакт</a>
+      </nav>
+      <button class="icon-button" type="button" data-open-feedback aria-label="Открыть окно обратной связи">
+        <span class="icon-phone"></span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2200&q=90"
+          alt="Современный частный дом из стекла, бетона и дерева"
+        />
+        <div class="hero-scrim"></div>
+        <div class="hero-content">
+          <p class="eyebrow reveal">Премиальное строительство под ключ</p>
+          <h1 id="hero-title" class="reveal">Дом, ремонт и демонтаж с точностью инженерного продукта.</h1>
+          <p class="hero-copy reveal">
+            NordHaus проектирует, строит и обновляет пространства с ясной сметой,
+            чистой эстетикой и управлением сроками без лишнего шума.
+          </p>
+          <div class="hero-actions reveal">
+            <a class="button button-primary" href="#services">Смотреть услуги</a>
+            <button class="button button-ghost" type="button" data-open-feedback>Запросить расчет</button>
+          </div>
+        </div>
+
+        <div class="hero-dashboard reveal" aria-label="Панель статуса проекта">
+          <div class="window-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="dashboard-grid">
+            <div>
+              <span class="metric" data-count="42">0</span>
+              <small>дня до сдачи</small>
+            </div>
+            <div>
+              <span class="metric" data-count="98">0</span>
+              <small>% этапов закрыто</small>
+            </div>
+          </div>
+          <div class="build-visual" aria-hidden="true">
+            <span class="beam beam-one"></span>
+            <span class="beam beam-two"></span>
+            <span class="beam beam-three"></span>
+            <span class="scan-line"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="service-strip" id="services" aria-labelledby="services-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Три направления</p>
+          <h2 id="services-title">Выберите окно работ.</h2>
+        </div>
+        <div class="service-grid">
+          <article class="service-window reveal">
+            <img
+              src="https://images.unsplash.com/photo-1600566753151-384129cf4e3e?auto=format&fit=crop&w=1200&q=85"
+              alt="Современный дом в процессе строительства"
+            />
+            <div class="service-body">
+              <span class="service-number">01</span>
+              <h3>Постройка дома</h3>
+              <p>Архитектура, фундамент, коробка, инженерия и чистовая сдача под единым контролем.</p>
+              <button class="text-action" type="button" data-service="Постройка дома">Открыть расчет</button>
+            </div>
+          </article>
+          <article class="service-window reveal">
+            <img
+              src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=1200&q=85"
+              alt="Стильный интерьер квартиры после ремонта"
+            />
+            <div class="service-body">
+              <span class="service-number">02</span>
+              <h3>Ремонт квартиры</h3>
+              <p>Дизайн, черновые работы, электрика, сантехника и финишная отделка без хаоса на объекте.</p>
+              <button class="text-action" type="button" data-service="Ремонт квартиры">Открыть расчет</button>
+            </div>
+          </article>
+          <article class="service-window reveal">
+            <img
+              src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=85"
+              alt="Экскаватор на строительной площадке"
+            />
+            <div class="service-body">
+              <span class="service-number">03</span>
+              <h3>Снос домов</h3>
+              <p>Инженерное обследование, техника, вывоз мусора и безопасная подготовка участка.</p>
+              <button class="text-action" type="button" data-service="Снос домов">Открыть расчет</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="process" id="process" aria-labelledby="process-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Метод</p>
+          <h2 id="process-title">Проект движется как хорошо собранный интерфейс.</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <span>1</span>
+            <h3>Диагностика</h3>
+            <p>Фиксируем задачу, участок, ограничения и бюджет до старта работ.</p>
+          </div>
+          <div class="timeline-item reveal">
+            <span>2</span>
+            <h3>Смета</h3>
+            <p>Показываем материалы, этапы и контрольные даты в прозрачной структуре.</p>
+          </div>
+          <div class="timeline-item reveal">
+            <span>3</span>
+            <h3>Производство</h3>
+            <p>Ведем стройку, ремонт или демонтаж с ежедневной отчетностью.</p>
+          </div>
+          <div class="timeline-item reveal">
+            <span>4</span>
+            <h3>Сдача</h3>
+            <p>Передаем объект, документацию и гарантийный план обслуживания.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Демонстрация</p>
+          <h2 id="projects-title">Спокойная визуальная система для дорогого сегмента.</h2>
+        </div>
+        <div class="showcase">
+          <figure class="project-panel reveal">
+            <img
+              src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1500&q=85"
+              alt="Кран и современное здание на строительной площадке"
+            />
+            <figcaption>
+              <strong>Residence A17</strong>
+              <span>дом 420 м2, монолит и стекло</span>
+            </figcaption>
+          </figure>
+          <div class="spec-panel reveal">
+            <p>Средний контроль проекта</p>
+            <strong>12 недель</strong>
+            <span>до первой приемки работ</span>
+            <div class="spec-line"></div>
+            <p>Формат отчетности</p>
+            <strong>24/7</strong>
+            <span>фото, статус, закупки, отклонения</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Обратная связь</p>
+          <h2 id="contact-title">Оставьте заявку в фейковом окне, как в премиальном приложении.</h2>
+          <p>Форма демонстрационная: она показывает сценарий заявки и не отправляет данные на сервер.</p>
+        </div>
+        <div class="feedback-window reveal" data-feedback-window>
+          <div class="window-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+            <button type="button" data-minimize aria-label="Свернуть окно"></button>
+          </div>
+          <form class="feedback-form is-disabled" data-feedback-form aria-label="Демонстрационное окно обратной связи">
+            <label>
+              Имя
+              <input name="name" type="text" value="Алексей" tabindex="-1" readonly />
+            </label>
+            <label>
+              Услуга
+              <select name="service" data-service-select tabindex="-1" disabled>
+                <option>Постройка дома</option>
+                <option>Ремонт квартиры</option>
+                <option>Снос домов</option>
+              </select>
+            </label>
+            <label>
+              Телефон
+              <input name="phone" type="tel" value="+7 900 000-00-00" tabindex="-1" readonly />
+            </label>
+            <button class="button button-primary" type="button" disabled>Получить расчет</button>
+            <p class="form-note" data-form-note>Это фейковое окно обратной связи для демонстрации.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Это демонстрационный сайт строительной компании. Все данные, формы и расчеты показаны как пример.</p>
+    </footer>
+
+    <button class="floating-contact" type="button" data-open-feedback aria-label="Открыть окно обратной связи">
+      <span class="icon-phone"></span>
+    </button>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
